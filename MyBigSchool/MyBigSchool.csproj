@@ -195,6 +195,7 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Content\CoursesController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -205,12 +206,22 @@
     <Compile Include="Migrations\201903280238013_KhoiTaoModel.Designer.cs">
       <DependentUpon>201903280238013_KhoiTaoModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201903280313159_CreateTableCourse.cs" />
+    <Compile Include="Migrations\201903280313159_CreateTableCourse.Designer.cs">
+      <DependentUpon>201903280313159_CreateTableCourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903280316129_PopulateCategoryTable.cs" />
+    <Compile Include="Migrations\201903280316129_PopulateCategoryTable.Designer.cs">
+      <DependentUpon>201903280316129_PopulateCategoryTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\Course.cs" />
+    <Compile Include="Models\ApplicationUser.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="ViewModels\CourseViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
@@ -271,6 +282,7 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Courses\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -287,6 +299,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201903280238013_KhoiTaoModel.resx">
       <DependentUpon>201903280238013_KhoiTaoModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903280313159_CreateTableCourse.resx">
+      <DependentUpon>201903280313159_CreateTableCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903280316129_PopulateCategoryTable.resx">
+      <DependentUpon>201903280316129_PopulateCategoryTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

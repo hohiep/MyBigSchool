@@ -7,7 +7,7 @@ using MyBigSchool.Models;
 using MyBigSchool.ViewModels;
 using System.Data.Entity;
 using Microsoft.AspNet.Identity;
-
+using System.Threading.Tasks;
 namespace MyBigSchool.Content
 {
     public class CoursesController : Controller
@@ -44,7 +44,7 @@ namespace MyBigSchool.Content
                 CategoryId = viewModel.Category,
                 Place = viewModel.Place
             };
-            _dbContext.Course.Add(course);
+            _dbContext.Courses.Add(course);
             _dbContext.SaveChanges();
             return RedirectToAction("index", "Home");
         }

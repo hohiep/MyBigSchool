@@ -3,7 +3,7 @@
     padding-bottom: 20px;
 }
 
-/* Set padding to keep content from hitting the edges */
+/* Set padding to keep content from hitting the edges 
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
@@ -34,4 +34,26 @@ textarea {
 
     .navbar-inverse .navbar-brand {
         color: white;
+    }
+/*course layout*/
+.course{
+    list-style:none;
+}
+.course > li .date{
+    text-align:center;
+    background-color: #f34c9e;
+    color:white;
+    width:60px;
+    border-radius:8px;
+    display:inline-block;
+}
+    .course > li .lecturer {
+        margin-right: auto;
+        display: inline-block;
+        position:center;
+    }
+    .course > li .category {
+        margin-right: auto;
+        display: inline-block;
+        position: center;
     }

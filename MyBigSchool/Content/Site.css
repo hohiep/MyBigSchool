@@ -38,22 +38,34 @@ textarea {
 /*course layout*/
 .course{
     list-style:none;
+    display:inline-block;
 }
 .course > li .date{
     text-align:center;
     background-color: #f34c9e;
     color:white;
-    width:60px;
+    width:80px;
     border-radius:8px;
     display:inline-block;
 }
     .course > li .lecturer {
         margin-right: auto;
         display: inline-block;
-        position:center;
+        position: center;
+        margin-right: 150px;
+        /*margin-top: 20px;*/
     }
     .course > li .category {
         margin-right: auto;
         display: inline-block;
         position: center;
+        margin-left: 80px;
     }
+.course > li .action{
+    display:none;
+  margin-right:initial;
+    position:absolute;
+}
+.course > li:hover .action{
+    display:block;
+}

@@ -3,16 +3,7 @@
     ViewBag.Title = "Home Page";
 }
 
-@*<div class="row">
-       <ul>
-           @foreach(var course in Model)
-           {
-               <li>
-                   @course.DateTime - @course.Category.Name
-               </li>
-           }
-       </ul>
-    </div>*@
+
 <ul class="course">
     @foreach (var course in Model.UpCommingCourses)
     {
@@ -36,11 +27,12 @@
             
                 <span class="category">
                     @course.Category.Name
+                </span>
                     @if (Model.ShowAction)
                     {
                         <button data-course-id="@course.Id" class="btn btn-default btn-sm js-toggle-attendance">Going?</button>
                     }
-                </span>
+                
             </div>
             
         </li>

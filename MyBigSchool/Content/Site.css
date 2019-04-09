@@ -3,7 +3,7 @@
     padding-bottom: 20px;
 }
 
-/* Set padding to keep content from hitting the edges 
+/* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
@@ -22,50 +22,35 @@ select,
 textarea {
     max-width: 280px;
 }
-/*thay doi color*/
-.navbar-inverse {
-    background-color: #f34c9e;
-    border-color: #fbf6f6;
+
+.course {
+    list-style: none;
 }
 
-    .navbar-inverse .navbar-nav > li > a {
-        color: white;
+    .course > li {
+        position: relative;
+        margin-bottom: 30px;
     }
 
-    .navbar-inverse .navbar-brand {
-        color: white;
-    }
-/*course layout*/
-.course{
-    list-style:none;
-    display:inline-block;
-}
-.course > li .date{
-    text-align:center;
-    background-color: #f34c9e;
-    color:white;
-    width:80px;
-    border-radius:8px;
-    display:inline-block;
-}
-    .course > li .lecturer {
-        margin-right: auto;
-        display: inline-block;
-        position: center;
-        margin-right: 150px;
-        /*margin-top: 20px;*/
-    }
-    .course > li .category {
-        margin-right: auto;
-        display: inline-block;
-        position: center;
-        margin-left: 80px;
-    }
-.course > li .action{
-    display:none;
-  margin-right:initial;
-    position:absolute;
-}
-.course > li:hover .action{
-    display:block;
-}
+        .course > li .date {
+            text-align: center;
+            background-color: #0094ff;
+            color: white;
+            width: 60px;
+            border-radius: 8px;
+        }
+
+        .course > li.details {
+            position: absolute;
+            top: 0;
+            left: 70px;
+        }
+        .course > li .action {
+            display: none;
+            margin-right: initial;
+            position: absolute;
+        }
+
+        .course > li:hover .action {
+            display: block;
+        }

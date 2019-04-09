@@ -48,11 +48,11 @@
                 bootbox.confirm("Are you sure to cancel?",
                     function () {
                         $.ajax({
-                            url: "/api/course/" + link.attr("data-course-id"),
-                            method: "DALETE"
+                            url: "/api/courses/" + link.attr("data-course-id"),
+                            method: "DELETE"
                         })
                             .done(function () {
-                                link.parent("li").fadeOut(function () {
+                                link.parents("li").fadeOut(function () {
                                     $(this).remove();
                                 });
                             })

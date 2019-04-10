@@ -34,7 +34,7 @@ textarea {
 
         .course > li .date {
             text-align: center;
-            background-color: #f34c9e;
+            background-color: #54d4e1;
             color: white;
             width: 60px;
             border-radius: 8px;
@@ -55,7 +55,7 @@ textarea {
             display: block;
         }
 .navbar-inverse {
-    background-color: #f34c9e;
+    background-color: #c43232;
     border-color:#fbf6f6;
 }
 .navbar-inverse .navbar-nav > li > a{

@@ -234,6 +234,10 @@
     <Compile Include="Migrations\201904091512532_AddIsCanceledColumnToCourse.Designer.cs">
       <DependentUpon>201904091512532_AddIsCanceledColumnToCourse.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201904100146114_AddNameColumnToApplicationUser.cs" />
+    <Compile Include="Migrations\201904100146114_AddNameColumnToApplicationUser.Designer.cs">
+      <DependentUpon>201904100146114_AddNameColumnToApplicationUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Attendance.cs" />
@@ -336,6 +340,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201904091512532_AddIsCanceledColumnToCourse.resx">
       <DependentUpon>201904091512532_AddIsCanceledColumnToCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904100146114_AddNameColumnToApplicationUser.resx">
+      <DependentUpon>201904100146114_AddNameColumnToApplicationUser.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

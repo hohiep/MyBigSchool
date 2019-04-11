@@ -13,16 +13,13 @@ namespace MyBigSchool.Controllers
     public class HomeController : Controller
     {
         private ApplicationDbContext _dbContext;
-        //private readonly string c;
+        
 
         public HomeController()
         {
             _dbContext = new ApplicationDbContext();
         }
-        //public ActionResult Index()
-        //{
-        //    return View();
-        //}
+       
         public ActionResult Index()
         {
             var upcommingCourses = _dbContext.Courses
